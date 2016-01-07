@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  XibaibaiAdministrator
+
+  Created by xbb01 on 16/1/5.
+  Copyright © 2016年 xbb01. All rights reserved.
+*/
+"loginSureButton" = "sure";
+"loginPhone" = " phoneNumber";
+"loginPwd" = " PWD";
+"loginPhoneLengthMax" = "Mobile phone number is too long";
+"loginPwdLengthMax" = "The password is too long";
+"loginSurePhone" = "Mobile phone number is not correct";
+"loginSurePwd" = "Password length is too short";
+"loginSuccess" = "LoginSuccess";
+"indexPage" = "home";
+"one" = "App";
+"two" = "WeChat";
+"tree" = "Comment";
+
+
+/**
+ * 0未付款
+ * 1派单中
+ * 2已派单
+ * 3在路上
+ * 4进行中
+ * 5未评价
+ * 6已评价
+ * 7已取消
+ */
+"orderStateZone" = "No Pay";
+"orderStateOne" = "Wait Send";
+"orderStateTwo" = "Have Send";
+"orderStateThree" = "On Way";
+"orderStateFour" = "Doing";
+"orderStateFive" = "No Comment";
+"orderStateSix" = "Have Comment";
+"orderStateSeven" = "Have Cannel";
+"orderStateAll" = "All State";

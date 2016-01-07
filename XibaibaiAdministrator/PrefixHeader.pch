@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  XibaibaiAdministrator
+//
+//  Created by xbb01 on 16/1/5.
+//  Copyright © 2016年 xbb01. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+/** 系统库(网络请求必备)*/
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+/** 宏定义 */
+#import "APPSystemMacro.h"
+#import "APPServiceMacro.h"
+#import "APPUIMacro.h"
+#import "APPNotifactionMacro.h"
+#import "NetworkHelper.h"
+#import "SVProgressHUD.h"
+
+/** 基础控制器 */
+#import "XBBBaseViewController.h"
+#import "XBBBaseTableViewController.h"
+#import "XBBBaseNavigationViewController.h"
+
+
+#endif /* PrefixHeader_pch */

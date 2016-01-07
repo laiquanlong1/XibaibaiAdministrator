@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  XibaibaiAdministrator
+
+  Created by xbb01 on 16/1/5.
+  Copyright © 2016年 xbb01. All rights reserved.
+*/
+"loginSureButton" = "确定";
+"loginPhone" = " 手机号码";
+"loginPwd" = " 密码";
+"loginPhoneLengthMax" = "手机号超出长度!";
+"loginPwdLengthMax" = "密码过长了";
+"loginSurePhone" = "手机号长度不正确";
+"loginSurePwd" = "密码长度太短";
+"loginSuccess" = "登录成功";
+"indexPage" = "主页";
+"one" = "洗白白app";
+"two" = "微信";
+"tree" = "大众点评";
+
+
+"orderStateZone" = "未支付";
+"orderStateOne" = "派单中";
+"orderStateTwo" = "已派单";
+"orderStateThree" = "在路上";
+"orderStateFour" = "进行中";
+"orderStateFive" = "未评价";
+"orderStateSix" = "已评价";
+"orderStateSeven" = "已取消";
+"orderStateAll" = "全部订单";

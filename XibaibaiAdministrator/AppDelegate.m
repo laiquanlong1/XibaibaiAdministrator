@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "XBBHomeViewConctroller.h"
+#import "XBBLoginViewController.h"
+#import "XBBBaseNavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +18,22 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    BOOL islogin = [[NSUserDefaults standardUserDefaults] boolForKey:ISLOGIN];
+    if (islogin) {
+        XBBHomeViewConctroller *homeViewController = [[XBBHomeViewConctroller alloc] init];
+        XBBBaseNavigationViewController *nav = [[XBBBaseNavigationViewController alloc] initWithRootViewController:homeViewController];
+        self.window.rootViewController = nav;
+    }else
+    {
+        self.window.rootViewController = [[XBBLoginViewController alloc] init];
+    }
+    
     return YES;
 }
 
@@ -89,7 +106,6 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
-    
     return _persistentStoreCoordinator;
 }
 
