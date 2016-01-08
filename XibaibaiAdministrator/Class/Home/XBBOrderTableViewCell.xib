@@ -69,6 +69,10 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTD-jD-2WR">
+                        <rect key="frame" x="228" y="215" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="qLH-oi-PAQ" secondAttribute="trailing" id="0ru-l7-LMA"/>
@@ -85,7 +89,9 @@
                     <constraint firstAttribute="trailingMargin" secondItem="J10-Z8-WFN" secondAttribute="trailing" id="LpF-0L-Dau"/>
                     <constraint firstItem="WPk-0B-IId" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Pkd-Bz-yye"/>
                     <constraint firstAttribute="leadingMargin" secondItem="J10-Z8-WFN" secondAttribute="leading" id="QgD-et-zNc"/>
+                    <constraint firstItem="PTD-jD-2WR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="220" id="Sqp-w8-vqL"/>
                     <constraint firstAttribute="trailingMargin" secondItem="PEh-NV-7ek" secondAttribute="trailing" id="TX1-wa-ku6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PTD-jD-2WR" secondAttribute="trailing" constant="38" id="UPD-CF-d9x"/>
                     <constraint firstItem="WPk-0B-IId" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="aDn-1H-h5M"/>
                     <constraint firstAttribute="trailingMargin" secondItem="GIn-F1-NDi" secondAttribute="trailing" id="ars-Eu-9Jh"/>
                     <constraint firstAttribute="trailingMargin" secondItem="hed-tJ-Eif" secondAttribute="trailing" id="b7K-Pn-phz"/>
@@ -93,14 +99,17 @@
                     <constraint firstAttribute="leadingMargin" secondItem="hed-tJ-Eif" secondAttribute="leading" id="c6N-cT-XZR"/>
                     <constraint firstItem="fnO-qX-sOd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="du2-kX-tae"/>
                     <constraint firstAttribute="trailingMargin" secondItem="WPk-0B-IId" secondAttribute="trailing" id="dun-gG-npn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PTD-jD-2WR" secondAttribute="bottom" constant="44" id="fQL-tf-viY"/>
                     <constraint firstItem="fnO-qX-sOd" firstAttribute="top" secondItem="WPk-0B-IId" secondAttribute="bottom" constant="15" id="fRO-AQ-3F0"/>
                     <constraint firstItem="hcG-cH-lAy" firstAttribute="top" secondItem="qLH-oi-PAQ" secondAttribute="bottom" constant="14" id="i9L-Ra-taM"/>
                     <constraint firstAttribute="trailingMargin" secondItem="hcG-cH-lAy" secondAttribute="trailing" id="ihX-d0-ggP"/>
+                    <constraint firstItem="PTD-jD-2WR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="207" id="jvm-BN-wdu"/>
                     <constraint firstItem="D1I-tf-dkH" firstAttribute="top" secondItem="hcG-cH-lAy" secondAttribute="bottom" constant="8" id="rhO-JA-wi1"/>
                     <constraint firstAttribute="leadingMargin" secondItem="D1I-tf-dkH" secondAttribute="leading" id="rw6-2R-NdD"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="orderButton" destination="PTD-jD-2WR" id="fCf-39-Nzk"/>
                 <outlet property="orderIdLabel" destination="J10-Z8-WFN" id="cwQ-r7-8KV"/>
                 <outlet property="orderNameLabel" destination="GIn-F1-NDi" id="6hH-dR-TRN"/>
                 <outlet property="orderNumLabel" destination="hcG-cH-lAy" id="JNK-uO-aBm"/>

@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Automatic">
-    <elements/>
+    <entity name="XBBObject" representedClassName="XBBObject" syncable="YES">
+        <attribute name="iphone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isNew" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order_way" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orderid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ordernum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pay_num" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="XBBObject" positionX="-54" positionY="-9" width="128" height="210"/>
+    </elements>
 </model>

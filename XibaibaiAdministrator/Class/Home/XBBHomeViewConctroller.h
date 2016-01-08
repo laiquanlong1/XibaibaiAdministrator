@@ -7,6 +7,8 @@
 //
 
 #import "XBBBaseViewController.h"
+#import "MJRefresh.h"
+
 
 @interface XBBHomeViewConctroller : XBBBaseViewController
 

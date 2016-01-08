@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AppDelegate.h"
 
 @interface XBBBaseTableViewController : UITableViewController
 - (void)netHasChageState:(NetState)netState;

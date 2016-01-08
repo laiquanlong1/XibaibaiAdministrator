@@ -17,7 +17,8 @@
 "one" = "洗白白app";
 "two" = "微信";
 "tree" = "大众点评";
-
+"justOrder" = "即刻";
+"planOrder" = "预约";
 
 "orderStateZone" = "未支付";
 "orderStateOne" = "派单中";
@@ -28,3 +29,5 @@
 "orderStateSix" = "已评价";
 "orderStateSeven" = "已取消";
 "orderStateAll" = "全部订单";
+
+"nodataString" = "此状态还没有订单信息~";

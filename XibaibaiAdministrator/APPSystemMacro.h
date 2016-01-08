@@ -17,9 +17,11 @@
 #endif
 
 /** appdelegate */
-
 #define AppDelegat ((AppDelegate *) [[UIApplication sharedApplication] delegate])
 
 
+
+/** 内存使用规则 */
+#define WS(weakSelf) __weak __typeof(&*self)weakSelf = self;
 
 #endif /* APPSystemMacro_h */

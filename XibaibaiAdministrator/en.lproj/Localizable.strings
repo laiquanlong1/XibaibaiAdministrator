@@ -18,6 +18,8 @@
 "two" = "WeChat";
 "tree" = "Comment";
 
+"justOrder" = "just Order";
+"planOrder" = "Plan Order";
 
 /**
  * 0未付款
@@ -38,3 +40,5 @@
 "orderStateSix" = "Have Comment";
 "orderStateSeven" = "Have Cannel";
 "orderStateAll" = "All State";
+
+"nodataString" = "This state is not the order information !";
