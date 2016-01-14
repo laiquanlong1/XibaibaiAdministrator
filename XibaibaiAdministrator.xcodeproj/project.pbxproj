@@ -76,6 +76,10 @@
 		8FDE43CA1C3FABEA00B65F7D /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDE43B41C3FABEA00B65F7D /* UIScrollView+MJRefresh.m */; };
 		8FDE43CB1C3FABEA00B65F7D /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDE43B61C3FABEA00B65F7D /* UIView+MJExtension.m */; };
 		8FDE43CC1C3FABEA00B65F7D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8FDE43B71C3FABEA00B65F7D /* README.md */; };
+		8FEADA151C4608EB004C4B3C /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEADA141C4608EB004C4B3C /* libBPush.a */; };
+		8FEADA171C46090C004C4B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEADA161C46090C004C4B3C /* Foundation.framework */; };
+		8FEADA191C46091B004C4B3C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEADA181C46091B004C4B3C /* CoreTelephony.framework */; };
+		8FEADA1B1C460925004C4B3C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FEADA1A1C460925004C4B3C /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +237,11 @@
 		8FDE43B51C3FABEA00B65F7D /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		8FDE43B61C3FABEA00B65F7D /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		8FDE43B71C3FABEA00B65F7D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8FEADA131C4608EB004C4B3C /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPush.h; sourceTree = "<group>"; };
+		8FEADA141C4608EB004C4B3C /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBPush.a; sourceTree = "<group>"; };
+		8FEADA161C46090C004C4B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8FEADA181C46091B004C4B3C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		8FEADA1A1C460925004C4B3C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +249,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FEADA1B1C460925004C4B3C /* libz.tbd in Frameworks */,
+				8FEADA191C46091B004C4B3C /* CoreTelephony.framework in Frameworks */,
+				8FEADA171C46090C004C4B3C /* Foundation.framework in Frameworks */,
 				8F7642F81C3BBE5C0094B46C /* MobileCoreServices.framework in Frameworks */,
+				8FEADA151C4608EB004C4B3C /* libBPush.a in Frameworks */,
 				8F7642F61C3BBE4F0094B46C /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +372,7 @@
 		8F7642DD1C3B95F40094B46C /* Verson */ = {
 			isa = PBXGroup;
 			children = (
+				8FEADA121C4608EB004C4B3C /* LibBPush */,
 				8FDE43881C3FABEA00B65F7D /* MJRefresh */,
 				8F465BAA1C3CE245000163EC /* SVProgressHUD */,
 				8F7643491C3BCBE30094B46C /* AFNetworking */,
@@ -461,6 +475,9 @@
 		8F9CBE9B1C3A220100D6CE93 = {
 			isa = PBXGroup;
 			children = (
+				8FEADA1A1C460925004C4B3C /* libz.tbd */,
+				8FEADA181C46091B004C4B3C /* CoreTelephony.framework */,
+				8FEADA161C46090C004C4B3C /* Foundation.framework */,
 				8F7642F71C3BBE5C0094B46C /* MobileCoreServices.framework */,
 				8F7642F51C3BBE4F0094B46C /* SystemConfiguration.framework */,
 				8F9CBEA61C3A220100D6CE93 /* XibaibaiAdministrator */,
@@ -630,6 +647,15 @@
 				8FDE43AC1C3FABEA00B65F7D /* MJRefreshStateHeader.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		8FEADA121C4608EB004C4B3C /* LibBPush */ = {
+			isa = PBXGroup;
+			children = (
+				8FEADA131C4608EB004C4B3C /* BPush.h */,
+				8FEADA141C4608EB004C4B3C /* libBPush.a */,
+			);
+			path = LibBPush;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -984,7 +1010,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XibaibaiAdministrator/PrefixHeader.pch";
 				INFOPLIST_FILE = XibaibaiAdministrator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XibaibaiAdministrator/LibBPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xbb.xbb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1006,7 +1037,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XibaibaiAdministrator/PrefixHeader.pch";
 				INFOPLIST_FILE = XibaibaiAdministrator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XibaibaiAdministrator/LibBPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xbb.xbb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

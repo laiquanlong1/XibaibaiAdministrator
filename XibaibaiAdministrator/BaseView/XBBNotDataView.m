@@ -16,8 +16,6 @@
     if (self == [super initWithFrame:frame]
         )
     {
-        
-        
     }
     return self;
 }
@@ -49,7 +47,6 @@
         [label setText:string];
         [self addSubview:label];
         [label setTextAlignment:NSTextAlignmentCenter];
-//         self.sureButton = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width/2 - buttonImage.size.width/2 , label.frame.size.height + label.frame.origin.y, buttonImage.size.width, buttonImage.size.height)];
         self.sureButton = [[UIButton alloc] initWithFrame:CGRectMake(self.bounds.size.width/2 - 50, label.frame.size.height + label.frame.origin.y, 100, 30.)];
         
         [self.sureButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
@@ -63,7 +60,6 @@
     }
     return self;
 }
-
 
 
 /*

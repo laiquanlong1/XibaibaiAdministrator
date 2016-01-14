@@ -24,27 +24,19 @@
 {
     [super viewDidLoad];
     [self loginViewSetupUI];
-
-
 }
 
 #pragma mark view
 - (void)loginViewSetupUI
 {
-//    UIImage *image = [UIImage imageNamed:@"loginBg"];
-//    UIImageView *bgImageView = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    bgImageView.image = image;
-//    [self.view addSubview:bgImageView];
     _controlScrollView = [[UIScrollView alloc] initWithFrame:ScreenBounds];
     self.view.backgroundColor = [UIColor blackColor];
- 
     [self.view addSubview:_controlScrollView];
     [self setUpTextFieldUI];
 }
 
 - (void)setUpTextFieldUI
 {
-    
     _controlView = [[UIView alloc] initWithFrame:ScreenBounds];
     [_controlScrollView addSubview:_controlView];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenKey:)];
@@ -132,11 +124,7 @@
             return NO;
         }
     }
-    
     DLog(@"%@",subString)
-    
-    
-    
     return YES;
 }
 

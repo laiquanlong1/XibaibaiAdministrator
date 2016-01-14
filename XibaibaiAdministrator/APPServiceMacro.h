@@ -13,14 +13,12 @@
 
 
 #define Login [NSString stringWithFormat:@"%@/login",adminAPI] /** login */
+#define orders_list [NSString stringWithFormat:@"%@/orderList",adminAPI] /** orderList */
 
 
-#define orders_list [NSString stringWithFormat:@"%@/orderList",adminAPI]
-
-#define orders_app [NSString stringWithFormat:@"%@/appOrder",adminAPI] /** featOrders */
-#define orders_dp [NSString stringWithFormat:@"%@/dpOrder",adminAPI] /** featOrders */
-#define orders_weChat [NSString stringWithFormat:@"%@/wxOrder",adminAPI] /** featOrders */
 
 
+
+#define BaiPushApiKey @"xseEbHb7loGQHUBduMk6oOqL" /** 百度推送key */
 
 #endif /* APPServiceMacro_h */

@@ -21,13 +21,8 @@
     UISegmentedControl *segment; /** 选择下单方式*/
     NSInteger selectIndex; /** 选择的下单方式 */
     
-    
     UISegmentedControl *selectTimeSegment; /** 下单时间 */
-    
-    
-    
     NSInteger page; /** 选择的下单页数 */
-
     NSInteger selectState; /** 选择的单子状态 */
 
     XbbPopView *popView;
@@ -38,8 +33,6 @@
 }
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *presentDatas;
-
-
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
@@ -410,7 +403,8 @@ static NSString *identifier = @"cell_1";
     }];
 }
 
-- (void)selectIndexState:(NSInteger)state andTitle:(NSString *)title
+- (void)selectIndexState:(NSInteger)state
+                andTitle:(NSString *)title
 {
     selectState = state;
     [rightBarButton setTitle:title forState:UIControlStateNormal];
@@ -420,7 +414,7 @@ static NSString *identifier = @"cell_1";
 
 - (IBAction)changeStateSelect:(id)sender
 {
-    DLog(@"") /** 改变筛选状态 */
+    /** 改变筛选状态 */
     if (popView == nil) {
         popView = [[XbbPopView alloc] init];
         popView.backgroundColor = [UIColor whiteColor];
@@ -435,7 +429,9 @@ static NSString *identifier = @"cell_1";
 
 
 }
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
+                        change:(NSDictionary<NSString *,id> *)change
+                       context:(void *)context
 {
     if ([(__bridge NSString *)context isEqualToString:@"way"]) {
         NSDictionary *dic = change;
@@ -509,7 +505,8 @@ static NSString *identifier = @"cell_1";
     return self.presentDatas.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     XBBOrderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
@@ -517,11 +514,11 @@ static NSString *identifier = @"cell_1";
     }
     XBBObject *o = self.presentDatas[indexPath.row];
     if (o.isNew) {
-        [cell.orderButton setTitle:@"时薪" forState:UIControlStateNormal];
+        [cell.orderButton setTitle:@"New Production" forState:UIControlStateNormal];
         cell.orderButton.alpha = 1;
     }else
     {
-        [cell.orderButton setTitle:@"旧的" forState:UIControlStateNormal];
+        [cell.orderButton setTitle:@"Old Production" forState:UIControlStateNormal];
         cell.orderButton.alpha = 0;
     }
     cell.orderTimeLabel.text  = o.order_time;
@@ -533,6 +530,7 @@ static NSString *identifier = @"cell_1";
     cell.orderPayWayLabel.text = o.order_way;
     cell.orderIdLabel.text = o.orderid;
     cell.orderTypeLabel.text = o.order_type;
+    
     return cell;
 }
 
